@@ -1,0 +1,154 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://tilesets/grasslands/export/land.tres" type="TileSet" id=1]
+[ext_resource path="res://fondo5.tex" type="Texture" id=2]
+[ext_resource path="res://tilesets/grasslands/arboles1.tex" type="Texture" id=3]
+[ext_resource path="res://player/player.gd" type="Script" id=4]
+[ext_resource path="res://player/character.png" type="Texture" id=5]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 7.45166
+height = 30.1904
+
+[node name="main" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+
+[node name="tile_map" type="TileMap" parent="."]
+
+transform/pos = Vector2( -375.165, -5.55188 )
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 32, 32 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 720895, 536870913, 786431, 536870913, 851967, 536870913, 917502, 536870915, 917503, 536870913, 852026, 536870912, 852027, 536870912, 852028, 536870912, 983038, 536870913, 983039, 536870913, 917504, 536870913, 917505, 0, 917506, 0, 917507, 0, 917508, 0, 917509, 0, 917510, 0, 917511, 0, 917512, 0, 917513, 0, 917514, 0, 917515, 0, 917516, 0, 917517, 0, 917518, 0, 917519, 0, 917520, 0, 917521, 0, 917522, 0, 917523, 0, 917524, 0, 917525, 0, 917526, 0, 917527, 0, 917528, 0, 917529, 0, 917530, 0, 917531, 0, 917532, 0, 917533, 0, 917534, 0, 917535, 0, 917536, 0, 917537, 0, 917538, 0, 917539, 0, 917540, 0, 917541, 0, 917542, 536870916, 917543, 536870916, 917544, 536870916, 917545, 536870916, 917546, 536870916, 917547, 536870916, 917548, 536870916, 917549, 536870916, 917550, 536870916, 917551, 536870916, 917552, 536870916, 917553, 0, 917554, 0, 917555, 0, 917556, 0, 917557, 0, 917558, 0, 917559, 0, 917560, 0, 917561, 0, 917562, 0, 917563, 0, 917564, 0, 917565, 0, 917566, 0, 917567, 0, 917568, 0, 917569, 0, 917570, 0, 1048574, 536870913, 1048575, 536870913, 983040, 536870913, 983041, 536870913, 983042, 536870913, 983043, 536870913, 983044, 536870913, 983045, 536870913, 983046, 536870913, 983047, 536870913, 983048, 536870913, 983049, 536870913, 983050, 536870913, 983051, 536870913, 983052, 536870913, 983053, 536870913, 983054, 536870913, 983055, 536870913, 983056, 536870913, 983057, 536870913, 983058, 1, 983059, 1, 983060, 1, 983061, 1, 983062, 1, 983063, 1, 983064, 1, 983065, 1, 983066, 1, 983067, 1, 983068, 1, 983069, 1, 983070, 1, 983071, 1, 983072, 1, 983073, 1, 983074, 1, 983075, 1, 983076, 1, 983077, 1, 983078, 1, 983079, 1, 983080, 1, 983081, 1, 983082, 1, 983083, 1, 983084, 1, 983085, 1, 983086, 1, 983087, 536870913, 983088, 536870913, 1114110, 536870913, 1114111, 536870913, 1048576, 536870913, 1048577, 536870913, 1048578, 536870913, 1048579, 536870913, 1048580, 536870913, 1048581, 536870913, 1048582, 536870913, 1048583, 536870913, 1048584, 536870913, 1048585, 536870913, 1048586, 536870913, 1048587, 536870913, 1048588, 536870913, 1048589, 536870913, 1048590, 536870913, 1048591, 536870913, 1048592, 536870913, 1048593, 536870913, 1048594, 1, 1048595, 1, 1048596, 1, 1048597, 1, 1048598, 1, 1048599, 1, 1048600, 1, 1048601, 1, 1048602, 1, 1048603, 1, 1048604, 1, 1048605, 1, 1048606, 1, 1048607, 1, 1048608, 1, 1048609, 1, 1048610, 1, 1048611, 1, 1048612, 1, 1048613, 1, 1048614, 1, 1048615, 1, 1048616, 1, 1048617, 1, 1048618, 1, 1048619, 1, 1048620, 1, 1048621, 1, 1048622, 1, 1048623, 536870913 )
+__meta__ = { "_edit_lock_":true }
+
+[node name="bambu" type="TextureFrame" parent="tile_map"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -38.0
+margin/top = 148.0
+margin/right = 1769.0
+margin/bottom = 448.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+__meta__ = { "_edit_lock_":true }
+
+[node name="bambu2" type="TextureFrame" parent="tile_map"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -1843.0
+margin/top = 147.0
+margin/right = -36.0
+margin/bottom = 447.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="arboles" type="TextureFrame" parent="tile_map"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 106.0
+margin/top = 151.0
+margin/right = 1913.0
+margin/bottom = 451.0
+texture = ExtResource( 3 )
+stretch_mode = 0
+__meta__ = { "_edit_lock_":true }
+
+[node name="player" type="KinematicBody2D" parent="."]
+
+transform/pos = Vector2( 487.446, 409.231 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.385559, 0.899567 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 4 )
+
+[node name="sprite" type="Sprite" parent="player"]
+
+texture = ExtResource( 5 )
+
+[node name="camera_2d" type="Camera2D" parent="player"]
+
+transform/pos = Vector2( 7.6295, 13.115 )
+transform/scale = Vector2( 2.93986, 2.01081 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 0.5, 0.5 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+limit/smoothed = false
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.1
+
+[node name="collision" type="CollisionShape2D" parent="player"]
+
+transform/pos = Vector2( 0.385559, 0.899567 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+scroll/offset = Vector2( 0, 0 )
+scroll/base_offset = Vector2( 0, 0 )
+scroll/base_scale = Vector2( 1, 1 )
+scroll/limit_begin = Vector2( 0, 0 )
+scroll/limit_end = Vector2( 0, 0 )
+scroll/ignore_camera_zoom = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+transform/pos = Vector2( 205.447, 467.388 )
+transform/scale = Vector2( 6.29522, 3.41838 )
+z/relative = false
+motion/scale = Vector2( 1, 1 )
+motion/offset = Vector2( 0, 0 )
+motion/mirroring = Vector2( 0, 0 )
+
+
