@@ -20,12 +20,6 @@ var velocity = Vector2()
 var can_jump = false
 var jump_timer = 0
 
-
-
-
-
-
-
 # Start
 func _ready():
 	add_to_group('enemies')
@@ -58,14 +52,6 @@ func _fixed_process(delta):
 	# Movement
 	var movement = 0
 	
-	# Input: LEFT
-	if(Input.is_action_pressed("ui_left")):
-		movement -= 1
-	
-	# Input: RIGHT
-	if(Input.is_action_pressed("ui_right")):
-		movement += 1
-	
 	print(get_tree().get_root().get_node('main').get_node('player').get_pos())
 	
 	if(get_tree().get_root().get_node('main').get_node('player').get_pos().x>self.get_pos().x):
@@ -78,14 +64,4 @@ func _fixed_process(delta):
 	
 	# Change horizontal velocity
 	velocity.x = lerp(velocity.x, movement, ACCELERATION)
-	
-	# Input: Jump
-	if(can_jump && Input.is_action_pressed("ui_up")):
-		velocity.y -= JUMP_FORCE
-		jump_timer = JUMP_TIME_THRESHOLD
-
-	if(is_colliding() && get_collider().is_in_group('enemies')):
-		get_node('SamplePlayer2D').play('dead')
-		print(get_tree().get_root().get_node('main').get_node('enemy').free())
-
 	

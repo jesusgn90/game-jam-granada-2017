@@ -66,5 +66,4 @@ func _fixed_process(delta):
 		jump_timer = JUMP_TIME_THRESHOLD
 
 	if(is_colliding() && get_collider().is_in_group('enemies')):
-		get_node('SamplePlayer2D').play('dead')
-		print(get_tree().get_root().get_node('main').get_node('enemy').free())
+		print('colisión con babosa')
