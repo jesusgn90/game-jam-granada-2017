@@ -1,16 +1,23 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://tilesets/grasslands/export/land.tres" type="TileSet" id=1]
 [ext_resource path="res://fondo5.tex" type="Texture" id=2]
 [ext_resource path="res://tilesets/grasslands/arboles1.tex" type="Texture" id=3]
 [ext_resource path="res://player/player.gd" type="Script" id=4]
 [ext_resource path="res://player/character.png" type="Texture" id=5]
+[ext_resource path="res://sounds/dead.smp" type="Sample" id=6]
+[ext_resource path="res://enemy/enemy.gd" type="Script" id=7]
+[ext_resource path="res://enemy/babosa.png" type="Texture" id=8]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 7.45166
-height = 30.1904
+radius = 10.1143
+height = 10.8937
+
+[sub_resource type="SampleLibrary" id=2]
+
+samples/dead = { "db":0.0, "pitch":1.0, "sample":ExtResource( 6 ) }
 
 [node name="main" type="Control"]
 
@@ -19,9 +26,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 0.0
+margin/top = 43.0
 margin/right = 40.0
-margin/bottom = 40.0
+margin/bottom = 83.0
 
 [node name="tile_map" type="TileMap" parent="."]
 
@@ -84,12 +91,12 @@ texture = ExtResource( 3 )
 stretch_mode = 0
 __meta__ = { "_edit_lock_":true }
 
-[node name="player" type="KinematicBody2D" parent="."]
+[node name="player" type="KinematicBody2D" parent="." groups=[ "personaje" ]]
 
 transform/pos = Vector2( 487.446, 409.231 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.385559, 0.899567 )
+shapes/0/transform = Matrix32( 1.70762, 0, 0, 1.46766, 0.795333, 3.2798 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -124,7 +131,46 @@ drag_margin/bottom = 0.1
 
 [node name="collision" type="CollisionShape2D" parent="player"]
 
-transform/pos = Vector2( 0.385559, 0.899567 )
+transform/pos = Vector2( 0.795333, 3.2798 )
+transform/scale = Vector2( 1.70762, 1.46766 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="SamplePlayer2D" type="SamplePlayer2D" parent="player"]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 2 )
+config/pitch_random = 0.0
+
+[node name="enemy" type="KinematicBody2D" parent="." groups=[ "enemies" ]]
+
+transform/pos = Vector2( -74.0033, 391.836 )
+transform/scale = Vector2( 0.968646, 0.94262 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.53248, 0, 0, 2.07462, 26.5257, 28.768 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 7 )
+
+[node name="sprite" type="Sprite" parent="enemy"]
+
+transform/pos = Vector2( 26.029, 26.7681 )
+transform/scale = Vector2( 0.173098, 0.170588 )
+texture = ExtResource( 8 )
+
+[node name="collision" type="CollisionShape2D" parent="enemy"]
+
+transform/pos = Vector2( 26.5257, 28.768 )
+transform/scale = Vector2( 1.53248, 2.07462 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0

@@ -84,7 +84,6 @@ bounce = 0.0
 [node name="collision_shape_2d" type="CollisionShape2D" parent="sprite_floor2/static_body_2d"]
 
 transform/pos = Vector2( 3.39836, 44.3645 )
-transform/scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
