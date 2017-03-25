@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=13 format=1]
 
 [ext_resource path="res://tilesets/grasslands/export/land.tres" type="TileSet" id=1]
 [ext_resource path="res://fondo5.tex" type="Texture" id=2]
@@ -6,8 +6,10 @@
 [ext_resource path="res://player/player.gd" type="Script" id=4]
 [ext_resource path="res://player/character.png" type="Texture" id=5]
 [ext_resource path="res://sounds/dead.smp" type="Sample" id=6]
-[ext_resource path="res://enemy/enemy.gd" type="Script" id=7]
-[ext_resource path="res://enemy/babosa.png" type="Texture" id=8]
+[ext_resource path="res://sounds/mp5.smp" type="Sample" id=7]
+[ext_resource path="res://sounds/shot.smp" type="Sample" id=8]
+[ext_resource path="res://enemy/enemy.gd" type="Script" id=9]
+[ext_resource path="res://enemy/babosa.png" type="Texture" id=10]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -18,11 +20,8 @@ height = 10.8937
 [sub_resource type="SampleLibrary" id=2]
 
 samples/dead = { "db":0.0, "pitch":1.0, "sample":ExtResource( 6 ) }
-
-[sub_resource type="Curve2D" id=3]
-
-bake_interval = 5.0
-_data = { "points":Vector2Array(  ) }
+samples/mp5 = { "db":0.0, "pitch":1.0, "sample":ExtResource( 7 ) }
+samples/shot = { "db":0.0, "pitch":1.0, "sample":ExtResource( 8 ) }
 
 [node name="main" type="Control"]
 
@@ -175,21 +174,7 @@ motion/scale = Vector2( 1, 1 )
 motion/offset = Vector2( 0, 0 )
 motion/mirroring = Vector2( 0, 0 )
 
-[node name="Path2D" type="Path2D" parent="."]
-
-curve = SubResource( 3 )
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-
-offset = 0.0
-h_offset = 0.0
-v_offset = 0.0
-rotate = true
-cubic_interp = true
-loop = true
-lookahead = 4.0
-
-[node name="enemy" type="KinematicBody2D" parent="Path2D/PathFollow2D" groups=[ "enemies" ]]
+[node name="enemy" type="KinematicBody2D" parent="." groups=[ "enemies" ]]
 
 transform/pos = Vector2( 193.997, 421.836 )
 transform/scale = Vector2( 0.968646, 0.94262 )
@@ -200,16 +185,16 @@ shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 collision/margin = 0.08
-script/script = ExtResource( 7 )
+script/script = ExtResource( 9 )
 
-[node name="sprite" type="Sprite" parent="Path2D/PathFollow2D/enemy"]
+[node name="sprite" type="Sprite" parent="enemy"]
 
 transform/pos = Vector2( -8.03913, -2.9364 )
 transform/scale = Vector2( 0.173098, 0.170588 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 __meta__ = { "_edit_lock_":true }
 
-[node name="collision" type="CollisionShape2D" parent="Path2D/PathFollow2D/enemy"]
+[node name="collision" type="CollisionShape2D" parent="enemy"]
 
 transform/pos = Vector2( -5.47772, 3.63078 )
 transform/scale = Vector2( 1.53248, 1.48562 )
@@ -218,36 +203,7 @@ trigger = false
 _update_shape_index = 0
 __meta__ = { "_edit_lock_":true }
 
-[node name="enemy2" type="KinematicBody2D" parent="Path2D/PathFollow2D" groups=[ "enemies" ]]
-
-transform/pos = Vector2( 655.997, 410.836 )
-transform/scale = Vector2( 0.968646, 0.94262 )
-input/pickable = false
-shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1.53248, 0, 0, 1.48562, -5.47772, 3.63078 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-collision/margin = 0.08
-script/script = ExtResource( 7 )
-
-[node name="sprite" type="Sprite" parent="Path2D/PathFollow2D/enemy2"]
-
-transform/pos = Vector2( -8.03913, -2.9364 )
-transform/scale = Vector2( 0.173098, 0.170588 )
-texture = ExtResource( 8 )
-__meta__ = { "_edit_lock_":true }
-
-[node name="collision" type="CollisionShape2D" parent="Path2D/PathFollow2D/enemy2"]
-
-transform/pos = Vector2( -5.47772, 3.63078 )
-transform/scale = Vector2( 1.53248, 1.48562 )
-shape = SubResource( 1 )
-trigger = false
-_update_shape_index = 0
-__meta__ = { "_edit_lock_":true }
-
-[node name="enemy3" type="KinematicBody2D" parent="Path2D/PathFollow2D" groups=[ "enemies" ]]
+[node name="enemy3" type="KinematicBody2D" parent="." groups=[ "enemies" ]]
 
 transform/pos = Vector2( 352.997, 418.836 )
 transform/scale = Vector2( 0.968646, 0.94262 )
@@ -258,16 +214,16 @@ shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 collision/margin = 0.08
-script/script = ExtResource( 7 )
+script/script = ExtResource( 9 )
 
-[node name="sprite" type="Sprite" parent="Path2D/PathFollow2D/enemy3"]
+[node name="sprite" type="Sprite" parent="enemy3"]
 
 transform/pos = Vector2( -8.03913, -2.9364 )
 transform/scale = Vector2( 0.173098, 0.170588 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 __meta__ = { "_edit_lock_":true }
 
-[node name="collision" type="CollisionShape2D" parent="Path2D/PathFollow2D/enemy3"]
+[node name="collision" type="CollisionShape2D" parent="enemy3"]
 
 transform/pos = Vector2( -5.47772, 3.63078 )
 transform/scale = Vector2( 1.53248, 1.48562 )

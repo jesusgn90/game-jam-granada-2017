@@ -67,3 +67,7 @@ func _fixed_process(delta):
 
 	if(is_colliding() && get_collider().is_in_group('enemies')):
 		print('colisión con babosa')
+
+	if(Input.is_key_pressed(32)):
+		get_node('SamplePlayer2D').play('shot')
+		
