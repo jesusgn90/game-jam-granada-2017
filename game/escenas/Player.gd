@@ -100,11 +100,8 @@ func _fixed_process(delta):
 		
 		
 		
-<<<<<<< HEAD
 	#Obtenemos la direccion
 	if(velocity.x>0):
 		right = true
 	else:
 		left = true
-=======
->>>>>>> c1cb328c766b1b7ff5be1ef891d301345bdb31c5

@@ -1,17 +1,12 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://escenas/Player.gd" type="Script" id=1]
 [ext_resource path="res://imagenes/pj.png" type="Texture" id=2]
-[ext_resource path="res://sounds/shot.smp" type="Sample" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 12.6866, 6.89654 )
-
-[sub_resource type="SampleLibrary" id=2]
-
-samples/shot = { "db":0.0, "pitch":1.0, "sample":ExtResource( 3 ) }
 
 [node name="Player" type="KinematicBody2D"]
 
@@ -26,6 +21,7 @@ script/script = ExtResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 12.0648, -0.28475 )
 transform/scale = Vector2( 3.35937, 2.83003 )
 anchor_mode = 1
@@ -46,6 +42,20 @@ drag_margin/top = 0.2
 drag_margin/right = 0.2
 drag_margin/bottom = 0.2
 
+[node name="Label" type="Label" parent="Camera2D"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -19.0
+margin/top = -25.0
+margin/right = 13.0
+margin/bottom = -11.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 transform/pos = Vector2( 8.10217, 0.573836 )
@@ -61,16 +71,5 @@ transform/pos = Vector2( 10.8487, 0.424421 )
 transform/scale = Vector2( 0.053125, 0.0552185 )
 texture = ExtResource( 2 )
 __meta__ = { "_edit_lock_":true }
-
-[node name="SamplePlayer2D" type="SamplePlayer2D" parent="."]
-
-params/volume_db = 0.0
-params/pitch_scale = 1.0
-params/attenuation/min_distance = 1.0
-params/attenuation/max_distance = 2048.0
-params/attenuation/distance_exp = 1.0
-config/polyphony = 1
-config/samples = SubResource( 2 )
-config/pitch_random = 0.0
 
 
