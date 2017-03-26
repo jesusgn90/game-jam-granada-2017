@@ -28,6 +28,21 @@ var right = false
 # Start
 func _ready():
 	set_fixed_process(true)
+	set_process_input(true)
+
+func _input(event):
+	if(Input.is_key_pressed(32)):
+		var b = bullet.instance()
+		b.init(left,right)
+		var pos = get_pos()
+		get_tree().get_root().get_node('main').add_child(b)
+		if(right):
+			print('derecha')
+			b.set_pos(Vector2(pos.x + 40, pos.y + 20))
+		else:
+			print('izquierda')
+			b.set_pos(Vector2(pos.x - 40, pos.y + 20))
+		get_node('SamplePlayer2D').play('laser')
 
 # Processing
 func _fixed_process(delta):
@@ -90,19 +105,13 @@ func _fixed_process(delta):
 		jump_timer = JUMP_TIME_THRESHOLD
 		
 	
-	if(Input.is_key_pressed(32)):
-		var b = bullet.instance()
-		var pos = self.get_pos()
-		pos.x += 10
-		b.set_pos(pos)
-		self.add_child(b)
-		get_node('SamplePlayer2D').play('laser')
-
 		#Obtenemos la direccion
 	if(velocity.x>0):
 		right = true
+		left = false
 	else:
 		left = true
+		right = false
 	
 	if(is_colliding() && get_collider().is_in_group('enemies')):
 		if(vidas > 0):
