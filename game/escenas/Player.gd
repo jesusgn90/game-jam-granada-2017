@@ -48,13 +48,15 @@ func _fixed_process(delta):
 	
 	# Input: LEFT
 	if(Input.is_action_pressed("ui_left")):
+		self.draw_texture(load("res://imagenes/pjprof.png"),self.get_pos())
 		movement -= 1
 	
 	# Input: RIGHT
 	if(Input.is_action_pressed("ui_right")):
 		movement += 1
 	
-	
+	if(velocity.x==0):
+		self.draw_texture(load("res://imagenes/pj.png"),self.get_pos())
 	# Set movement speed
 	movement *= MOVEMENT_SPEED
 	
