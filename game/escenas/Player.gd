@@ -54,6 +54,7 @@ func _fixed_process(delta):
 	if(Input.is_action_pressed("ui_right")):
 		movement += 1
 	
+	
 	# Set movement speed
 	movement *= MOVEMENT_SPEED
 	

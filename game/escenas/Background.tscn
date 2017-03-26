@@ -5,217 +5,217 @@
 [ext_resource path="res://imagenes/fondo1.png" type="Texture" id=3]
 [ext_resource path="res://imagenes/barra2.png" type="Texture" id=4]
 
-[sub_resource type="SegmentShape2D" id=35]
+[sub_resource type="SegmentShape2D" id=1]
 
 custom_solver_bias = 0.0
 a = Vector2( 3613.84, 589.851 )
 b = Vector2( 3613.92, -0.0662289 )
 
-[sub_resource type="SegmentShape2D" id=36]
+[sub_resource type="SegmentShape2D" id=2]
 
 custom_solver_bias = 0.0
 a = Vector2( 0, 0 )
 b = Vector2( 3614, -0.02074 )
 
-[sub_resource type="SegmentShape2D" id=34]
+[sub_resource type="SegmentShape2D" id=3]
 
 custom_solver_bias = 0.0
 a = Vector2( -3.2536, -9.79808 )
 b = Vector2( -3.25379, 2.96553 )
 
-[sub_resource type="SegmentShape2D" id=32]
+[sub_resource type="SegmentShape2D" id=4]
 
 custom_solver_bias = 0.0
 a = Vector2( 83.0912, -2.74308 )
 b = Vector2( 72.7089, -2.81534 )
 
-[sub_resource type="SegmentShape2D" id=33]
+[sub_resource type="SegmentShape2D" id=5]
 
 custom_solver_bias = 0.0
 a = Vector2( 68.4458, -5.21163 )
 b = Vector2( 32.1744, -5.16857 )
 
-[sub_resource type="SegmentShape2D" id=31]
+[sub_resource type="SegmentShape2D" id=6]
 
 custom_solver_bias = 0.0
 a = Vector2( 29.6315, -0.939563 )
 b = Vector2( 13.2583, -0.968995 )
 
-[sub_resource type="SegmentShape2D" id=30]
+[sub_resource type="SegmentShape2D" id=7]
 
 custom_solver_bias = 0.0
 a = Vector2( 17.4223, -5.40195 )
 b = Vector2( 1.88476, -5.3914 )
 
-[sub_resource type="SegmentShape2D" id=1]
+[sub_resource type="SegmentShape2D" id=8]
 
 custom_solver_bias = 0.0
 a = Vector2( 92.6734, 2.97764 )
 b = Vector2( 90.3013, 2.88547 )
 
-[sub_resource type="SegmentShape2D" id=2]
+[sub_resource type="SegmentShape2D" id=9]
 
 custom_solver_bias = 0.0
 a = Vector2( 90.3088, 585.571 )
 b = Vector2( 87.6372, 599.456 )
 
-[sub_resource type="SegmentShape2D" id=3]
+[sub_resource type="SegmentShape2D" id=10]
 
 custom_solver_bias = 0.0
 a = Vector2( 86.4151, 584.873 )
 b = Vector2( 87.641, 599.588 )
 
-[sub_resource type="SegmentShape2D" id=4]
+[sub_resource type="SegmentShape2D" id=11]
 
 custom_solver_bias = 0.0
 a = Vector2( 86.4162, 584.901 )
 b = Vector2( 83.1413, 575.127 )
 
-[sub_resource type="SegmentShape2D" id=5]
+[sub_resource type="SegmentShape2D" id=12]
 
 custom_solver_bias = 0.0
 a = Vector2( 83.1952, 576.521 )
 b = Vector2( 80.7476, 528.406 )
 
-[sub_resource type="SegmentShape2D" id=6]
+[sub_resource type="SegmentShape2D" id=13]
 
 custom_solver_bias = 0.0
 a = Vector2( 73.5394, 510.303 )
 b = Vector2( 80.7678, 530.449 )
 
-[sub_resource type="SegmentShape2D" id=7]
+[sub_resource type="SegmentShape2D" id=14]
 
 custom_solver_bias = 0.0
 a = Vector2( 73.5363, 510.237 )
 b = Vector2( 70.8003, 570.974 )
 
-[sub_resource type="SegmentShape2D" id=8]
+[sub_resource type="SegmentShape2D" id=15]
 
 custom_solver_bias = 0.0
 a = Vector2( 70.8014, 571.144 )
 b = Vector2( 67.5062, 565.298 )
 
-[sub_resource type="SegmentShape2D" id=9]
+[sub_resource type="SegmentShape2D" id=16]
 
 custom_solver_bias = 0.0
 a = Vector2( 3.49034, 18.9967 )
 b = Vector2( 2.70746, 19.8978 )
 
-[sub_resource type="SegmentShape2D" id=10]
+[sub_resource type="SegmentShape2D" id=17]
 
 custom_solver_bias = 0.0
 a = Vector2( 2.1256, 17.1374 )
 b = Vector2( 2.71108, 19.8967 )
 
-[sub_resource type="SegmentShape2D" id=11]
+[sub_resource type="SegmentShape2D" id=18]
 
 custom_solver_bias = 0.0
 a = Vector2( 2.13646, 17.11 )
 b = Vector2( 1.51159, 16.9286 )
 
-[sub_resource type="SegmentShape2D" id=12]
+[sub_resource type="SegmentShape2D" id=19]
 
 custom_solver_bias = 0.0
 a = Vector2( 1.51071, 16.9147 )
 b = Vector2( 1.04011, 21.7449 )
 
-[sub_resource type="SegmentShape2D" id=13]
+[sub_resource type="SegmentShape2D" id=20]
 
 custom_solver_bias = 0.0
 a = Vector2( 1.04526, 21.7855 )
 b = Vector2( 0.294643, 21.6018 )
 
-[sub_resource type="SegmentShape2D" id=14]
+[sub_resource type="SegmentShape2D" id=21]
 
 custom_solver_bias = 0.0
 a = Vector2( 1955.7, 570.426 )
 b = Vector2( 1977.59, 587.089 )
 
-[sub_resource type="SegmentShape2D" id=15]
+[sub_resource type="SegmentShape2D" id=22]
 
 custom_solver_bias = 0.0
 a = Vector2( 47.5326, 571.735 )
 b = Vector2( 70.4173, 570.446 )
 
-[sub_resource type="SegmentShape2D" id=16]
+[sub_resource type="SegmentShape2D" id=23]
 
 custom_solver_bias = 0.0
 a = Vector2( 47.5751, 575.303 )
 b = Vector2( 39.6958, 545.964 )
 
-[sub_resource type="SegmentShape2D" id=17]
+[sub_resource type="SegmentShape2D" id=24]
 
 custom_solver_bias = 0.0
 a = Vector2( 951.098, 245.964 )
 b = Vector2( 1061.25, 332.48 )
 
-[sub_resource type="SegmentShape2D" id=18]
+[sub_resource type="SegmentShape2D" id=25]
 
 custom_solver_bias = 0.0
 a = Vector2( 25.1286, 32.02 )
 b = Vector2( 19.8222, 32.5409 )
 
-[sub_resource type="SegmentShape2D" id=19]
+[sub_resource type="SegmentShape2D" id=26]
 
 custom_solver_bias = 0.0
 a = Vector2( 0.594782, 2.94197 )
 b = Vector2( 1.08674, 3.24288 )
 
-[sub_resource type="SegmentShape2D" id=20]
+[sub_resource type="SegmentShape2D" id=27]
 
 custom_solver_bias = 0.0
 a = Vector2( -2.58539, 3.04744 )
 b = Vector2( -2.25665, 3.28946 )
 
-[sub_resource type="SegmentShape2D" id=21]
+[sub_resource type="SegmentShape2D" id=28]
 
 custom_solver_bias = 0.0
 a = Vector2( -0.460127, 3.28517 )
 b = Vector2( -0.734374, 3.05178 )
 
-[sub_resource type="SegmentShape2D" id=22]
+[sub_resource type="SegmentShape2D" id=29]
 
 custom_solver_bias = 0.0
 a = Vector2( -2.27254, 3.25599 )
 b = Vector2( -1.08499, 3.24257 )
 
-[sub_resource type="SegmentShape2D" id=23]
+[sub_resource type="SegmentShape2D" id=30]
 
 custom_solver_bias = 0.0
 a = Vector2( -0.0139316, 3.50581 )
 b = Vector2( 0.156087, 3.25372 )
 
-[sub_resource type="SegmentShape2D" id=24]
+[sub_resource type="SegmentShape2D" id=31]
 
 custom_solver_bias = 0.0
 a = Vector2( -0.461758, 3.29692 )
 b = Vector2( -0.0142953, 3.50136 )
 
-[sub_resource type="SegmentShape2D" id=25]
+[sub_resource type="SegmentShape2D" id=32]
 
 custom_solver_bias = 0.0
 a = Vector2( 0.140796, 3.27756 )
 b = Vector2( 0.605541, 2.93528 )
 
-[sub_resource type="SegmentShape2D" id=26]
+[sub_resource type="SegmentShape2D" id=33]
 
 custom_solver_bias = 0.0
 a = Vector2( -0.474279, 8.49504 )
 b = Vector2( 1.00988, 8.15621 )
 
-[sub_resource type="SegmentShape2D" id=27]
+[sub_resource type="SegmentShape2D" id=34]
 
 custom_solver_bias = 0.0
 a = Vector2( -0.966224, 3.05288 )
 b = Vector2( -0.710526, 3.04461 )
 
-[sub_resource type="SegmentShape2D" id=28]
+[sub_resource type="SegmentShape2D" id=35]
 
 custom_solver_bias = 0.0
 a = Vector2( -0.96525, 3.05005 )
 b = Vector2( -1.0821, 3.2458 )
 
-[sub_resource type="SegmentShape2D" id=29]
+[sub_resource type="SegmentShape2D" id=36]
 
 custom_solver_bias = 0.0
 a = Vector2( -1.68837, 3.12635 )
@@ -224,112 +224,112 @@ b = Vector2( -1.08063, 3.24321 )
 [node name="Background" type="StaticBody2D"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 35 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 36 )
+shapes/1/shape = SubResource( 2 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 34 )
+shapes/2/shape = SubResource( 3 )
 shapes/2/transform = Matrix32( 37.8037, 0, 0, 46.2227, 123.016, 452.89 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 32 )
+shapes/3/shape = SubResource( 4 )
 shapes/3/transform = Matrix32( 37.8037, 0, 0, 46.2227, 123.016, 452.89 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 33 )
+shapes/4/shape = SubResource( 5 )
 shapes/4/transform = Matrix32( 37.8037, 0, 0, 46.2227, 123.016, 452.89 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 31 )
+shapes/5/shape = SubResource( 6 )
 shapes/5/transform = Matrix32( 37.8037, 0, 0, 46.2227, 110.411, 452.227 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 30 )
+shapes/6/shape = SubResource( 7 )
 shapes/6/transform = Matrix32( 37.8037, 0, 0, 46.2227, 110.411, 452.227 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 1 )
+shapes/7/shape = SubResource( 8 )
 shapes/7/transform = Matrix32( 37.8037, 0, 0, 46.2227, 110.411, 452.227 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 2 )
+shapes/8/shape = SubResource( 9 )
 shapes/8/transform = Matrix32( 37.8037, 0, 0, 1, 110.411, 0 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 3 )
+shapes/9/shape = SubResource( 10 )
 shapes/9/transform = Matrix32( 37.8037, 0, 0, 1, 110.411, 0 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 4 )
+shapes/10/shape = SubResource( 11 )
 shapes/10/transform = Matrix32( 37.8037, 0, 0, 1, 110.411, 0 )
 shapes/10/trigger = false
-shapes/11/shape = SubResource( 5 )
+shapes/11/shape = SubResource( 12 )
 shapes/11/transform = Matrix32( 37.8037, 0, 0, 1, 110.411, 0 )
 shapes/11/trigger = false
-shapes/12/shape = SubResource( 6 )
+shapes/12/shape = SubResource( 13 )
 shapes/12/transform = Matrix32( 37.8037, 0, 0, 1, 110.411, 0 )
 shapes/12/trigger = false
-shapes/13/shape = SubResource( 7 )
+shapes/13/shape = SubResource( 14 )
 shapes/13/transform = Matrix32( 37.8037, 0, 0, 1, 110.411, 0 )
 shapes/13/trigger = false
-shapes/14/shape = SubResource( 8 )
+shapes/14/shape = SubResource( 15 )
 shapes/14/transform = Matrix32( 37.8037, 0, 0, 1, 110.411, 0 )
 shapes/14/trigger = false
-shapes/15/shape = SubResource( 9 )
+shapes/15/shape = SubResource( 16 )
 shapes/15/transform = Matrix32( 213.971, 0, 0, 8.72034, 1914.52, 398.632 )
 shapes/15/trigger = false
-shapes/16/shape = SubResource( 10 )
+shapes/16/shape = SubResource( 17 )
 shapes/16/transform = Matrix32( 213.971, 0, 0, 8.72034, 1914.52, 398.632 )
 shapes/16/trigger = false
-shapes/17/shape = SubResource( 11 )
+shapes/17/shape = SubResource( 18 )
 shapes/17/transform = Matrix32( 213.971, 0, 0, 8.72034, 1914.52, 398.632 )
 shapes/17/trigger = false
-shapes/18/shape = SubResource( 12 )
+shapes/18/shape = SubResource( 19 )
 shapes/18/transform = Matrix32( 213.971, 0, 0, 8.72034, 1914.52, 398.632 )
 shapes/18/trigger = false
-shapes/19/shape = SubResource( 13 )
+shapes/19/shape = SubResource( 20 )
 shapes/19/transform = Matrix32( 213.971, 0, 0, 8.72034, 1914.52, 398.632 )
 shapes/19/trigger = false
-shapes/20/shape = SubResource( 14 )
+shapes/20/shape = SubResource( 21 )
 shapes/20/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/20/trigger = false
-shapes/21/shape = SubResource( 15 )
+shapes/21/shape = SubResource( 22 )
 shapes/21/transform = Matrix32( 26.6793, 0, 0, 3.74095, 77.0379, -1563.55 )
 shapes/21/trigger = false
-shapes/22/shape = SubResource( 16 )
+shapes/22/shape = SubResource( 23 )
 shapes/22/transform = Matrix32( 26.6793, 0, 0, 1, 77.0379, 0 )
 shapes/22/trigger = false
-shapes/23/shape = SubResource( 17 )
+shapes/23/shape = SubResource( 24 )
 shapes/23/transform = Matrix32( 1.35633, 0, 0, -0.408567, -303.012, 681.889 )
 shapes/23/trigger = false
-shapes/24/shape = SubResource( 18 )
+shapes/24/shape = SubResource( 25 )
 shapes/24/transform = Matrix32( 28.3967, 0, 0, 14.074, 273.967, 130.74 )
 shapes/24/trigger = false
-shapes/25/shape = SubResource( 19 )
+shapes/25/shape = SubResource( 26 )
 shapes/25/transform = Matrix32( -167.731, -1.46635e-05, 2.9967e-06, -34.2782, 283.192, 697.166 )
 shapes/25/trigger = false
-shapes/26/shape = SubResource( 20 )
+shapes/26/shape = SubResource( 27 )
 shapes/26/transform = Matrix32( -167.731, -1.46635e-05, 2.9967e-06, -34.2782, 283.192, 697.166 )
 shapes/26/trigger = false
-shapes/27/shape = SubResource( 21 )
+shapes/27/shape = SubResource( 28 )
 shapes/27/transform = Matrix32( -167.731, 1.46635e-05, -2.9967e-06, -34.2782, 282.594, 697.166 )
 shapes/27/trigger = false
-shapes/28/shape = SubResource( 22 )
+shapes/28/shape = SubResource( 29 )
 shapes/28/transform = Matrix32( -167.731, 1.46635e-05, -2.9967e-06, -34.2782, 282.594, 697.166 )
 shapes/28/trigger = false
-shapes/29/shape = SubResource( 23 )
+shapes/29/shape = SubResource( 30 )
 shapes/29/transform = Matrix32( -167.731, 1.46635e-05, -2.9967e-06, -34.2782, 282.594, 697.166 )
 shapes/29/trigger = false
-shapes/30/shape = SubResource( 24 )
+shapes/30/shape = SubResource( 31 )
 shapes/30/transform = Matrix32( -167.731, 1.46635e-05, -2.9967e-06, -34.2782, 283.192, 697.166 )
 shapes/30/trigger = false
-shapes/31/shape = SubResource( 25 )
+shapes/31/shape = SubResource( 32 )
 shapes/31/transform = Matrix32( -167.731, 1.46635e-05, -2.9967e-06, -34.2782, 283.192, 697.166 )
 shapes/31/trigger = false
-shapes/32/shape = SubResource( 26 )
+shapes/32/shape = SubResource( 33 )
 shapes/32/transform = Matrix32( -81.2195, 7.10043e-06, -1.13749e-06, -13.0114, 798.494, 698.672 )
 shapes/32/trigger = false
-shapes/33/shape = SubResource( 27 )
+shapes/33/shape = SubResource( 34 )
 shapes/33/transform = Matrix32( -167.731, 1.46635e-05, -2.9967e-06, -34.2782, 283.192, 697.166 )
 shapes/33/trigger = false
-shapes/34/shape = SubResource( 28 )
+shapes/34/shape = SubResource( 35 )
 shapes/34/transform = Matrix32( -167.731, 1.46635e-05, -2.9967e-06, -34.2782, 283.192, 697.166 )
 shapes/34/trigger = false
-shapes/35/shape = SubResource( 29 )
+shapes/35/shape = SubResource( 36 )
 shapes/35/transform = Matrix32( 167.731, 0, 0, -34.2782, 282.594, 697.166 )
 shapes/35/trigger = false
 collision/layers = 1
@@ -342,14 +342,14 @@ __meta__ = { "_edit_lock_":true }
 
 [node name="s36" type="CollisionShape2D" parent="."]
 
-shape = SubResource( 35 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 __meta__ = { "_edit_lock_":true }
 
 [node name="s35" type="CollisionShape2D" parent="."]
 
-shape = SubResource( 36 )
+shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 1
 __meta__ = { "_edit_lock_":true }
@@ -358,7 +358,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 123.016, 452.89 )
 transform/scale = Vector2( 37.8037, 46.2227 )
-shape = SubResource( 34 )
+shape = SubResource( 3 )
 trigger = false
 _update_shape_index = 2
 __meta__ = { "_edit_lock_":true }
@@ -367,7 +367,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 123.016, 452.89 )
 transform/scale = Vector2( 37.8037, 46.2227 )
-shape = SubResource( 32 )
+shape = SubResource( 4 )
 trigger = false
 _update_shape_index = 3
 __meta__ = { "_edit_lock_":true }
@@ -376,7 +376,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 123.016, 452.89 )
 transform/scale = Vector2( 37.8037, 46.2227 )
-shape = SubResource( 33 )
+shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 4
 __meta__ = { "_edit_lock_":true }
@@ -385,7 +385,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 452.227 )
 transform/scale = Vector2( 37.8037, 46.2227 )
-shape = SubResource( 31 )
+shape = SubResource( 6 )
 trigger = false
 _update_shape_index = 5
 __meta__ = { "_edit_lock_":true }
@@ -394,7 +394,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 452.227 )
 transform/scale = Vector2( 37.8037, 46.2227 )
-shape = SubResource( 30 )
+shape = SubResource( 7 )
 trigger = false
 _update_shape_index = 6
 __meta__ = { "_edit_lock_":true }
@@ -403,7 +403,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 452.227 )
 transform/scale = Vector2( 37.8037, 46.2227 )
-shape = SubResource( 1 )
+shape = SubResource( 8 )
 trigger = false
 _update_shape_index = 7
 __meta__ = { "_edit_lock_":true }
@@ -412,7 +412,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 0 )
 transform/scale = Vector2( 37.8037, 1 )
-shape = SubResource( 2 )
+shape = SubResource( 9 )
 trigger = false
 _update_shape_index = 8
 __meta__ = { "_edit_lock_":true }
@@ -421,7 +421,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 0 )
 transform/scale = Vector2( 37.8037, 1 )
-shape = SubResource( 3 )
+shape = SubResource( 10 )
 trigger = false
 _update_shape_index = 9
 __meta__ = { "_edit_lock_":true }
@@ -430,7 +430,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 0 )
 transform/scale = Vector2( 37.8037, 1 )
-shape = SubResource( 4 )
+shape = SubResource( 11 )
 trigger = false
 _update_shape_index = 10
 __meta__ = { "_edit_lock_":true }
@@ -439,7 +439,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 0 )
 transform/scale = Vector2( 37.8037, 1 )
-shape = SubResource( 5 )
+shape = SubResource( 12 )
 trigger = false
 _update_shape_index = 11
 __meta__ = { "_edit_lock_":true }
@@ -448,7 +448,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 0 )
 transform/scale = Vector2( 37.8037, 1 )
-shape = SubResource( 6 )
+shape = SubResource( 13 )
 trigger = false
 _update_shape_index = 12
 __meta__ = { "_edit_lock_":true }
@@ -457,7 +457,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 0 )
 transform/scale = Vector2( 37.8037, 1 )
-shape = SubResource( 7 )
+shape = SubResource( 14 )
 trigger = false
 _update_shape_index = 13
 __meta__ = { "_edit_lock_":true }
@@ -466,7 +466,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 110.411, 0 )
 transform/scale = Vector2( 37.8037, 1 )
-shape = SubResource( 8 )
+shape = SubResource( 15 )
 trigger = false
 _update_shape_index = 14
 __meta__ = { "_edit_lock_":true }
@@ -475,7 +475,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 1914.52, 398.632 )
 transform/scale = Vector2( 213.971, 8.72034 )
-shape = SubResource( 9 )
+shape = SubResource( 16 )
 trigger = false
 _update_shape_index = 15
 __meta__ = { "_edit_lock_":true }
@@ -484,7 +484,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 1914.52, 398.632 )
 transform/scale = Vector2( 213.971, 8.72034 )
-shape = SubResource( 10 )
+shape = SubResource( 17 )
 trigger = false
 _update_shape_index = 16
 __meta__ = { "_edit_lock_":true }
@@ -493,7 +493,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 1914.52, 398.632 )
 transform/scale = Vector2( 213.971, 8.72034 )
-shape = SubResource( 11 )
+shape = SubResource( 18 )
 trigger = false
 _update_shape_index = 17
 __meta__ = { "_edit_lock_":true }
@@ -502,7 +502,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 1914.52, 398.632 )
 transform/scale = Vector2( 213.971, 8.72034 )
-shape = SubResource( 12 )
+shape = SubResource( 19 )
 trigger = false
 _update_shape_index = 18
 __meta__ = { "_edit_lock_":true }
@@ -511,14 +511,14 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 1914.52, 398.632 )
 transform/scale = Vector2( 213.971, 8.72034 )
-shape = SubResource( 13 )
+shape = SubResource( 20 )
 trigger = false
 _update_shape_index = 19
 __meta__ = { "_edit_lock_":true }
 
 [node name="s16" type="CollisionShape2D" parent="."]
 
-shape = SubResource( 14 )
+shape = SubResource( 21 )
 trigger = false
 _update_shape_index = 20
 __meta__ = { "_edit_lock_":true }
@@ -527,7 +527,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 77.0379, -1563.55 )
 transform/scale = Vector2( 26.6793, 3.74095 )
-shape = SubResource( 15 )
+shape = SubResource( 22 )
 trigger = false
 _update_shape_index = 21
 __meta__ = { "_edit_lock_":true }
@@ -536,7 +536,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 77.0379, 0 )
 transform/scale = Vector2( 26.6793, 1 )
-shape = SubResource( 16 )
+shape = SubResource( 23 )
 trigger = false
 _update_shape_index = 22
 __meta__ = { "_edit_lock_":true }
@@ -545,7 +545,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( -303.012, 681.889 )
 transform/scale = Vector2( 1.35633, -0.408567 )
-shape = SubResource( 17 )
+shape = SubResource( 24 )
 trigger = false
 _update_shape_index = 23
 __meta__ = { "_edit_lock_":true }
@@ -554,7 +554,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 273.967, 130.74 )
 transform/scale = Vector2( 28.3967, 14.074 )
-shape = SubResource( 18 )
+shape = SubResource( 25 )
 trigger = false
 _update_shape_index = 24
 __meta__ = { "_edit_lock_":true }
@@ -564,7 +564,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 283.192, 697.166 )
 transform/rot = -180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 19 )
+shape = SubResource( 26 )
 trigger = false
 _update_shape_index = 25
 __meta__ = { "_edit_lock_":true }
@@ -574,7 +574,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 283.192, 697.166 )
 transform/rot = -180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 20 )
+shape = SubResource( 27 )
 trigger = false
 _update_shape_index = 26
 __meta__ = { "_edit_lock_":true }
@@ -584,7 +584,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 282.594, 697.166 )
 transform/rot = 180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 21 )
+shape = SubResource( 28 )
 trigger = false
 _update_shape_index = 27
 __meta__ = { "_edit_lock_":true }
@@ -594,7 +594,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 282.594, 697.166 )
 transform/rot = 180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 22 )
+shape = SubResource( 29 )
 trigger = false
 _update_shape_index = 28
 __meta__ = { "_edit_lock_":true }
@@ -604,7 +604,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 282.594, 697.166 )
 transform/rot = 180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 23 )
+shape = SubResource( 30 )
 trigger = false
 _update_shape_index = 29
 __meta__ = { "_edit_lock_":true }
@@ -614,7 +614,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 283.192, 697.166 )
 transform/rot = 180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 24 )
+shape = SubResource( 31 )
 trigger = false
 _update_shape_index = 30
 __meta__ = { "_edit_lock_":true }
@@ -624,7 +624,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 283.192, 697.166 )
 transform/rot = 180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 25 )
+shape = SubResource( 32 )
 trigger = false
 _update_shape_index = 31
 __meta__ = { "_edit_lock_":true }
@@ -634,7 +634,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 798.494, 698.672 )
 transform/rot = 180.0
 transform/scale = Vector2( 81.2195, 13.0114 )
-shape = SubResource( 26 )
+shape = SubResource( 33 )
 trigger = false
 _update_shape_index = 32
 __meta__ = { "_edit_lock_":true }
@@ -644,7 +644,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 283.192, 697.166 )
 transform/rot = 180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 27 )
+shape = SubResource( 34 )
 trigger = false
 _update_shape_index = 33
 __meta__ = { "_edit_lock_":true }
@@ -654,7 +654,7 @@ __meta__ = { "_edit_lock_":true }
 transform/pos = Vector2( 283.192, 697.166 )
 transform/rot = 180.0
 transform/scale = Vector2( 167.731, 34.2782 )
-shape = SubResource( 28 )
+shape = SubResource( 35 )
 trigger = false
 _update_shape_index = 34
 __meta__ = { "_edit_lock_":true }
@@ -663,7 +663,7 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 282.594, 697.166 )
 transform/scale = Vector2( 167.731, -34.2782 )
-shape = SubResource( 29 )
+shape = SubResource( 36 )
 trigger = false
 _update_shape_index = 35
 __meta__ = { "_edit_lock_":true }

@@ -25,4 +25,4 @@ func _ready():
 func _on_Timer_timeout():
 	var b = babosa.instance()
 	self.add_child(b)
-	b.set_pos(Vector2(rand_range(0,global.RES_X),rand_range(0,global.RES_Y)))
+	b.set_pos(Vector2(rand_range(0,global.RES_X),20))
