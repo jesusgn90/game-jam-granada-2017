@@ -44,3 +44,6 @@ func _fixed_process(delta):
 	velocity.x = movement
 	# Move and Slide
 	velocity = move_and_slide(velocity, FLOOR_NORMAL, SLOPE_FRICTION)
+
+	if(is_colliding() && get_collider().is_in_group('armas')):
+		self.free()
