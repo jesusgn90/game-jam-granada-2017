@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://escenas/Player.gd" type="Script" id=1]
 [ext_resource path="res://imagenes/pj.png" type="Texture" id=2]
 [ext_resource path="res://sounds/dead.smp" type="Sample" id=3]
-[ext_resource path="res://sounds/shot.smp" type="Sample" id=4]
+[ext_resource path="res://sounds/laser.smp" type="Sample" id=4]
+[ext_resource path="res://sounds/shot.smp" type="Sample" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -13,7 +14,8 @@ extents = Vector2( 12.6866, 6.89654 )
 [sub_resource type="SampleLibrary" id=2]
 
 samples/dead = { "db":0.0, "pitch":1.0, "sample":ExtResource( 3 ) }
-samples/shot = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/laser = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/shot = { "db":0.0, "pitch":1.0, "sample":ExtResource( 5 ) }
 
 [node name="Player" type="KinematicBody2D"]
 

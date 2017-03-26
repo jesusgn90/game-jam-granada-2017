@@ -66,4 +66,4 @@ func _fixed_process(delta):
 		jump_timer = JUMP_TIME_THRESHOLD
 		
 	if(Input.is_key_pressed(32)):
-		get_node('SamplePlayer2D').play('shot')
+		get_node('SamplePlayer2D').play('laser')
