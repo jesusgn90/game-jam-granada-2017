@@ -7,6 +7,12 @@ var saltamontes = load("res://escenas/Saltamontes.tscn")
 var back = background.instance()
 var p = player.instance()
 
+# counters
+var num_enemy = 0
+var num_death = 0
+# levels
+var current_level = 1
+var Nlevel = 10
 
 
 func _ready():
@@ -21,10 +27,15 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	var s = saltamontes.instance()
+	"""var s = saltamontes.instance()
 	self.add_child(s)
-	s.set_pos(Vector2(rand_range(0,global.RES_X),20))
-	
-	var b = babosa.instance()
-	self.add_child(b)
-	b.set_pos(Vector2(rand_range(0,global.RES_X),20))
+	s.set_pos(Vector2(rand_range(0,global.RES_X),20))"""
+	#if (num_enemy < current_level*Nlevel):
+	if(num_enemy < 1):
+			# variables
+		#var b = babosa.instance()
+		var b = babosa.instance()
+		self.add_child(b)
+		b.set_pos(Vector2(rand_range(0,global.RES_X),20))
+		num_enemy = num_enemy + 1
+		

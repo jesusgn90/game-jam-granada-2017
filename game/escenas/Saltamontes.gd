@@ -37,6 +37,7 @@ func _fixed_process(delta):
 		else:
 			movement -= 1
 	
+	
 	# Set movement speed
 	movement *= MOVEMENT_SPEED
 	

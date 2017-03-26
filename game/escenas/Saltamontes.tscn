@@ -27,7 +27,7 @@ transform/pos = Vector2( -7.65162, 3.80991 )
 transform/scale = Vector2( 0.0361601, 0.0577418 )
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=[ "enemies" ]]
 
 transform/pos = Vector2( -9.03667, 13.948 )
 transform/scale = Vector2( 4.36821, 3.12531 )
