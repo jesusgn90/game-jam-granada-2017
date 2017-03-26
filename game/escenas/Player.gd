@@ -68,11 +68,8 @@ func _fixed_process(delta):
 		
 	print(velocity.x)
 	if(Input.is_key_pressed(32)):
-<<<<<<< HEAD
 		get_node('SamplePlayer2D').play('shot')
 		#var b = bullet.instance()
 		#self.add_child(b)
 		#b.init(self.direc
-=======
 		get_node('SamplePlayer2D').play('laser')
->>>>>>> 3ae8519dc5a9cfae6466dba98a75805b7faa2400

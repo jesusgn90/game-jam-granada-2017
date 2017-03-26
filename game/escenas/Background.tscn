@@ -223,7 +223,6 @@ b = Vector2( -1.08063, 3.24321 )
 
 [node name="Background" type="StaticBody2D"]
 
-z/relative = false
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
