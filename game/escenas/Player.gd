@@ -66,6 +66,13 @@ func _fixed_process(delta):
 		self.get_node("Sprite").set_flip_h(false)
 		movement += 1
 	
+	#Obtenemos la direccion
+	if(velocity.x>0):
+		right = true
+	else:
+		left = true
+	
+	#Ponemos la textura de frente si estamos parados
 	if(velocity.x==0):
 		self.get_node("Sprite").set_texture(texturedefault)
 
@@ -80,18 +87,24 @@ func _fixed_process(delta):
 		velocity.y -= JUMP_FORCE
 		jump_timer = JUMP_TIME_THRESHOLD
 		
-	print(velocity.x)
+	
 	if(Input.is_key_pressed(32)):
 		get_node('SamplePlayer2D').play('shot')
-		#var b = bullet.instance()
-		#self.add_child(b)
+		var b = bullet.instance()
+		var pos = self.get_pos()
+		pos.x += 10
+		b.set_pos(pos)
+		self.add_child(b)
 		#b.init(self.direc
 		get_node('SamplePlayer2D').play('laser')
 		
 		
 		
+<<<<<<< HEAD
 	#Obtenemos la direccion
 	if(velocity.x>0):
 		right = true
 	else:
 		left = true
+=======
+>>>>>>> c1cb328c766b1b7ff5be1ef891d301345bdb31c5
