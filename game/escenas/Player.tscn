@@ -13,7 +13,7 @@ extents = Vector2( 12.6866, 6.89654 )
 
 samples/laser = { "db":-6.8, "pitch":1.0, "sample":ExtResource( 3 ) }
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=[ "personaje" ]]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )

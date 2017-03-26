@@ -19,6 +19,8 @@ var bullet = load("res://escenas/bullet.tscn")
 var textureprofile = load("res://imagenes/pjprof.png")
 var texturedefault = load("res://imagenes/pj.png")
 
+var vidas = 3
+
 #get position
 var left = false
 var right = false
@@ -37,7 +39,7 @@ func _fixed_process(delta):
 	
 	# Old:
 	# move(velocity)
-	
+
 	# New:
 	# Move and Slide
 	velocity = move_and_slide(velocity, FLOOR_NORMAL, SLOPE_FRICTION)
@@ -101,3 +103,8 @@ func _fixed_process(delta):
 		right = true
 	else:
 		left = true
+	
+	if(is_colliding() && get_collider().is_in_group('enemies')):
+		if(vidas > 0):
+			vidas -= 1
+			print('VIDAS: ', vidas)
