@@ -64,3 +64,6 @@ func _fixed_process(delta):
 	if(can_jump && Input.is_action_pressed("ui_up")):
 		velocity.y -= JUMP_FORCE
 		jump_timer = JUMP_TIME_THRESHOLD
+		
+	if(Input.is_key_pressed(32)):
+		get_node('SamplePlayer2D').play('shot')
