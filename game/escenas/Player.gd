@@ -15,7 +15,7 @@ const JUMP_TIME_THRESHOLD = 0.2 # seconds
 var velocity = Vector2()
 var can_jump = false
 var jump_timer = 0
-
+var bullet = load("res://escenas/bullet.tscn")
 
 # Start
 func _ready():
@@ -66,5 +66,9 @@ func _fixed_process(delta):
 		velocity.y -= JUMP_FORCE
 		jump_timer = JUMP_TIME_THRESHOLD
 		
+	print(velocity.x)
 	if(Input.is_key_pressed(32)):
 		get_node('SamplePlayer2D').play('shot')
+		#var b = bullet.instance()
+		#self.add_child(b)
+		#b.init(self.direc
