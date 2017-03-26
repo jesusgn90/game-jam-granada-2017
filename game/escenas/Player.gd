@@ -101,6 +101,7 @@ func _fixed_process(delta):
 	
 	# Input: Jump
 	if(can_jump && Input.is_action_pressed("ui_up")):
+		get_node('SamplePlayer2D2').play('jump')
 		velocity.y -= JUMP_FORCE
 		jump_timer = JUMP_TIME_THRESHOLD
 		

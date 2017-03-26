@@ -38,4 +38,20 @@ config/polyphony = 1
 config/samples = SubResource( 1 )
 config/pitch_random = 0.0
 
+[node name="Label" type="Label" parent="."]
+
+rect/scale = Vector2( 0.5, 0.5 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -28.0
+margin/top = 38.0
+margin/right = 72.0
+margin/bottom = 69.0
+text = "  PRESS KEY A \nTO PLAY AGAIN"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 

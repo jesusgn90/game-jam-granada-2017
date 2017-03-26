@@ -32,11 +32,13 @@ func _on_Timer_timeout():
 	if (num_enemy < current_level*Nlevel):
 			# variables
 		#var b = babosa.instance()
+		get_node('SamplePlayer2D2').play('saltamontes-appear')
 		var b = babosa.instance()
 		self.add_child(b)
 		b.set_pos(Vector2(rand_range(0,global.RES_X),20))
 		num_enemy = num_enemy + 1
 		if(num_enemy % 5 == 0):
+			get_node('SamplePlayer2D2').play('saltamontes-appear')
 			var s = saltamontes.instance()
 			self.add_child(s)
 			s.set_pos(Vector2(rand_range(0,global.RES_X),20))
