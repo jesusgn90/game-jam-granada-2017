@@ -16,6 +16,12 @@ var velocity = Vector2()
 var can_jump = false
 var jump_timer = 0
 var bullet = load("res://escenas/bullet.tscn")
+var textureprofile = load("res://imagenes/pjprof.png")
+var texturedefault = load("res://imagenes/pj.png")
+
+#get position
+var left = false
+var right = false
 
 # Start
 func _ready():
@@ -46,17 +52,23 @@ func _fixed_process(delta):
 	# Movement
 	var movement = 0
 	
+	
 	# Input: LEFT
 	if(Input.is_action_pressed("ui_left")):
-		self.draw_texture(load("res://imagenes/pjprof.png"),self.get_pos())
+		self.get_node("Sprite").set_texture(textureprofile)
+		self.get_node("Sprite").set_flip_h(true)
 		movement -= 1
 	
+	#self.get_node("Sprite").set_rot(0.0)
 	# Input: RIGHT
 	if(Input.is_action_pressed("ui_right")):
+		self.get_node("Sprite").set_texture(textureprofile)
+		self.get_node("Sprite").set_flip_h(false)
 		movement += 1
 	
 	if(velocity.x==0):
-		self.draw_texture(load("res://imagenes/pj.png"),self.get_pos())
+		self.get_node("Sprite").set_texture(texturedefault)
+
 	# Set movement speed
 	movement *= MOVEMENT_SPEED
 	
@@ -75,3 +87,11 @@ func _fixed_process(delta):
 		#self.add_child(b)
 		#b.init(self.direc
 		get_node('SamplePlayer2D').play('laser')
+		
+		
+		
+	#Obtenemos la direccion
+	if(movement.x>0):
+		right = true
+	else:
+		left = true
