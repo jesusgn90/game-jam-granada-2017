@@ -12,7 +12,7 @@ extents = Vector2( 12.6866, 6.89654 )
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 2.71304, 0, 0, 4.56612, 8.10217, 0.573836 )
+shapes/0/transform = Matrix32( 2.71304, 0, 0, 4.56612, 7.10217, 0.573836 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -21,8 +21,8 @@ script/script = ExtResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-transform/pos = Vector2( 12.0648, -0.28475 )
-transform/scale = Vector2( 3.35937, 2.83003 )
+transform/pos = Vector2( 0.183349, 4.71525 )
+transform/scale = Vector2( 1.28025, 2.83003 )
 anchor_mode = 1
 rotating = false
 current = true
@@ -41,34 +41,18 @@ drag_margin/top = 0.2
 drag_margin/right = 0.2
 drag_margin/bottom = 0.2
 
-[node name="Label" type="Label" parent="Camera2D"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = -19.0
-margin/top = -25.0
-margin/right = 13.0
-margin/bottom = -11.0
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-transform/pos = Vector2( 8.10217, 0.573836 )
+transform/pos = Vector2( 7.10217, 0.573836 )
 transform/scale = Vector2( 2.71304, 4.56612 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
-__meta__ = { "_edit_lock_":true }
 
 [node name="Sprite" type="Sprite" parent="."]
 
-transform/pos = Vector2( 10.8487, 0.424421 )
+transform/pos = Vector2( 9.84872, 1.42442 )
 transform/scale = Vector2( 0.053125, 0.0552185 )
 texture = ExtResource( 2 )
-__meta__ = { "_edit_lock_":true }
 
 
