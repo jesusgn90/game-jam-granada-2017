@@ -89,18 +89,14 @@ func _fixed_process(delta):
 		
 	
 	if(Input.is_key_pressed(32)):
-		get_node('SamplePlayer2D').play('shot')
 		var b = bullet.instance()
 		var pos = self.get_pos()
 		pos.x += 10
 		b.set_pos(pos)
 		self.add_child(b)
-		#b.init(self.direc
 		get_node('SamplePlayer2D').play('laser')
-		
-		
-		
-	#Obtenemos la direccion
+
+		#Obtenemos la direccion
 	if(velocity.x>0):
 		right = true
 	else:
