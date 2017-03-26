@@ -11,7 +11,7 @@ samples/theme = { "db":0.0, "pitch":1.0, "sample":ExtResource( 2 ) }
 
 script/script = ExtResource( 1 )
 
-[node name="Timer" type="Timer" parent="." groups=[ "armas" ]]
+[node name="Timer" type="Timer" parent="."]
 
 process_mode = 1
 wait_time = 3.0
