@@ -14,6 +14,8 @@ var num_death = 0
 var current_level = 1
 var Nlevel = 10
 
+func aumentar_muertos():
+	num_death += 1
 
 func _ready():
 	get_node('SamplePlayer2D').play('theme')
@@ -34,7 +36,10 @@ func _on_Timer_timeout():
 		self.add_child(b)
 		b.set_pos(Vector2(rand_range(0,global.RES_X),20))
 		num_enemy = num_enemy + 1
-		var s = saltamontes.instance()
-		self.add_child(s)
-		s.set_pos(Vector2(rand_range(0,global.RES_X),20))
-		
+		if(num_enemy % 5 == 0):
+			var s = saltamontes.instance()
+			self.add_child(s)
+			s.set_pos(Vector2(rand_range(0,global.RES_X),20))
+			num_enemy = num_enemy + 1
+	else:
+		current_level += 1

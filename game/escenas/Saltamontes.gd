@@ -49,4 +49,5 @@ func _fixed_process(delta):
 	if(is_colliding() && get_collider().is_in_group('armas')):
 		vidas -= 1
 		if(vidas <= 0):
+			get_tree().get_root().get_node('main').aumentar_muertos()
 			self.free()

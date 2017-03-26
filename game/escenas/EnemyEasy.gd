@@ -45,4 +45,5 @@ func _fixed_process(delta):
 	velocity = move_and_slide(velocity, FLOOR_NORMAL, SLOPE_FRICTION)
 
 	if(is_colliding() && get_collider().is_in_group('armas')):
+		get_tree().get_root().get_node('main').aumentar_muertos()
 		self.free()
