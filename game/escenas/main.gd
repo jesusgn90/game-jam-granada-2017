@@ -10,6 +10,7 @@ var p = player.instance()
 
 
 func _ready():
+	get_node('SamplePlayer2D').play('theme')
 	# Setting background
 	self.add_child(back)
 	
