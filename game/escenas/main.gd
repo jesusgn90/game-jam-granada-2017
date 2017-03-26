@@ -27,15 +27,14 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	"""var s = saltamontes.instance()
-	self.add_child(s)
-	s.set_pos(Vector2(rand_range(0,global.RES_X),20))"""
-	#if (num_enemy < current_level*Nlevel):
-	if(num_enemy < 1):
+	if (num_enemy < current_level*Nlevel):
 			# variables
 		#var b = babosa.instance()
 		var b = babosa.instance()
 		self.add_child(b)
 		b.set_pos(Vector2(rand_range(0,global.RES_X),20))
 		num_enemy = num_enemy + 1
+		var s = saltamontes.instance()
+		self.add_child(s)
+		s.set_pos(Vector2(rand_range(0,global.RES_X),20))
 		
