@@ -108,3 +108,7 @@ func _fixed_process(delta):
 		if(vidas > 0):
 			vidas -= 1
 			print('VIDAS: ', vidas)
+		else:
+			get_node('SamplePlayer2D').play('dead')
+			get_tree().change_scene('res://escenas/game-over.tscn')
+			
