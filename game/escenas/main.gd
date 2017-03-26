@@ -17,8 +17,6 @@ func _ready():
 
 	self.add_child(p)
 	p.set_pos(Vector2(20,60)) 
-	
-	
 	_on_Timer_timeout()
 	
 
