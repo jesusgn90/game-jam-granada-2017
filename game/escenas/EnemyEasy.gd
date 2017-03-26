@@ -15,7 +15,6 @@ var previous_dist = 0
 # Movement
 var movement = 0
 
-
 func _ready():
 	pass
 	set_fixed_process(true)

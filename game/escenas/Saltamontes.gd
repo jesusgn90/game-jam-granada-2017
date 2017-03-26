@@ -15,6 +15,7 @@ var previous_dist = 0
 # Movement
 var movement = 0
 
+var vidas = 3
 
 func _ready():
 	pass
@@ -45,4 +46,6 @@ func _fixed_process(delta):
 	# Move and Slide
 	velocity = move_and_slide(velocity, FLOOR_NORMAL, SLOPE_FRICTION)
 	if(is_colliding() && get_collider().is_in_group('armas')):
-		self.free()
+		vidas -= 1
+		if(vidas == 0):
+			self.free()
